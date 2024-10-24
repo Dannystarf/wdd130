@@ -10,39 +10,41 @@
     --link-hover-color: #f77f00;  /* Orange for link hover effects */
 }
 
-/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;  /* Text Font */
+    font-family: 'Roboto', sans-serif;  
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
 }
 
-/* Heading styles */
 h1, h2 {
     color: var(--primary-color);
-    font-family: 'Bebas Neue', sans-serif;  /* Heading Font */
+    font-family: 'Bebas Neue', sans-serif; 
     font-weight: bold;
 }
 
-/* Paragraph styles */
 p {
     color: var(--text-color);
     line-height: 1.6;
 }
 
-/* Social media links - remove underline */
 .social-links a {
     text-decoration: none;
 }
 
-/* Hero Section Styling */
 .hero {
     position: relative;
-    width: 100%; /* Makes hero container span full width */
-    height: 500px; /* Adjust height as needed */
-    overflow: hidden; /* Ensure content stays within the container */
+    width: 100%; 
+    height: 500px; 
+    overflow: hidden; 
+    margin-bottom: 10px
   }
   
   .hero img {
@@ -64,7 +66,7 @@ p {
     top: 40%;
     left: 10%;
     max-width: 600px;
-    background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent background */
+    background-color: rgba(255, 255, 255, 0.8); 
     padding: 20px;
     border-radius: 10px;
     color: var(--text-color);
@@ -77,15 +79,138 @@ p {
     margin-left: 15px;
   }
   
-  /* Limit page width */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
-  
-  /* Additional styling for social media icons */
+
   .social-links img {
     width: 40px;
     height: 40px;
   }
+
+  header{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    margin-bottom: 10px;
+  }
+
+  header img{
+    width: 150px;
+    height: auto;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  nav a{
+    color: var(--background-color);
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+  }
+
+  nav a:hover {
+    color: var(--link-hover-color);
+  }
+
+  .history{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+
+  .history article {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .history img {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+  }
+  
+.history h2 {
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+
+  .adventures {
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .adventures h2 {
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+  }
+
+  .adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 1rem;
+  }
+
+  .adventure-gallery figure {
+    text-align: center;
+  }
+  
+  .adventure-gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .adventure-gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--background-color);
+  }
+
+.footer {
+  background-color: var(--accent1-color);
+  padding: 1rem 2rem;
+}
+
+.footer-content {
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center; 
+}
+
+.footer-content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem; 
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
