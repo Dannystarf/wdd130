@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Rafting Adventures for inquiries, reservations, and suggestions. Reach out to our team for all your rafting adventure needs!">
+    <meta name="author" content="Daniel Ajayi">
     <title>Contact Us - Rafting Adventures</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- External CSS -->
     <link rel="stylesheet" href="./styles/rafting.css">
 </head>
 <body>
     <div id="contactus">
         <!-- Header Section -->
         <header>
-            <img src="./images/rafting.webp" alt="raftinglogo">
+            <img src="./images/rafting.webp" alt="rafting logo">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
@@ -21,32 +30,28 @@
 
         <!-- Main Content Section -->
         <main>
-
             <!-- Company Information -->
             <section id="company-info">
-                <h2>Contact Information</h2>
+                <h1>Contact Information</h1>
                 <p><strong>Address:</strong> 123 River Road, Rapids City</p>
                 <p><strong>Phone:</strong> (123) 456-7890</p>
                 <p><strong>Email:</strong> info@raftingadventures.com</p>
                 <div id="map">
-                    <iframe src="https://www.google.com/maps/embed?..." style="width: 100%; height: 300px; border: none;"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
                 </div>
             </section>
 
             <!-- Employee Profiles -->
             <section id="team">
                 <h2>Meet Our Team</h2>
-                
                 <figure class="employee">
                     <img src="./images/emplo1.webp" alt="Employee1">
                     <figcaption>John Doe - Guide</figcaption>
                 </figure>
-                
                 <figure class="employee">
                     <img src="./images/emplo2.webp" alt="Employee2">
                     <figcaption>Jane Smith - Customer Support</figcaption>
                 </figure>
-                
                 <figure class="employee">
                     <img src="./images/emplo3.webp" alt="Employee3">
                     <figcaption>Mike Johnson - Operations</figcaption>
@@ -57,30 +62,24 @@
             <section id="contact-form">
                 <h2>Contact Us</h2>
                 <form action="/submit_form" method="post">
-                    <!-- User's Name -->
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
-                    <!-- User's Email Address -->
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
 
-                    <!-- Purpose of Message -->
                     <p>Purpose of Message:</p>
                     <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
                     <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
                     <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
 
-                    <!-- Message Text Area -->
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
 
-                    <!-- Newsletter Subscription Checkbox -->
                     <label>
                         <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
                     </label>
 
-                    <!-- Submit Button -->
                     <button type="submit">Send Message</button>
                 </form>
             </section>
