@@ -85,6 +85,12 @@ p {
     padding: 20px;
   }
 
+  #contactus {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
   .social-links img {
     width: 40px;
     height: 40px;
@@ -213,4 +219,124 @@ p {
 .social-links img {
   width: 30px;
   height: 30px;
+}
+
+/* Company Information Section */
+#company-info {
+  display: grid;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+#company-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  font-weight: lighter;
+}
+
+#company-info p {
+  margin: 5px 0;
+  color: var(--text-color);
+  font-weight: 900;
+  font-size: 1.3rem;
+}
+
+#map iframe {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+/* Employee Profiles Section */
+#team {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 40px;
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+#team h2{
+  color: var(--background-color);
+  font-weight: lighter;
+}
+
+.employee img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #004466;
+  margin-bottom: 10px;
+}
+
+.employee figcaption {
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Contact Form Section */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#contact-form h2 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+#contact-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+#contact-form button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#contact-form button:hover {
+  background-color: var(--accent1-color);
 }
