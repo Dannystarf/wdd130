@@ -408,9 +408,8 @@ p {
 
 /* Trip Page Specific */
 .trip {
-  width: 100% auto;
+  width: auto;
   text-align: center;
-  justify-self: space-between;
 }
 
 .trip img {
